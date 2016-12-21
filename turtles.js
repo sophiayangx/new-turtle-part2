@@ -4,11 +4,11 @@ var turtle = $("#turtle");
 var turtleCage = $(".turtle-cage")
 
 function turnRight(n) {
-  heading = heading - 180
+  heading = heading - 90
 }
 
 function turnLeft(n) {
-  heading = heading + 180
+  heading = heading + 90
 }
 
 function turnRightStar(n) {
