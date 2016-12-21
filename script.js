@@ -5,15 +5,6 @@ $("body").keydown(function(keydownEvent) {
   } 
 })
 
-//function sides(distance, n) {
-//  for (i = 0; i < n; i++) {
-//    goForward(100)
-//    turnLeft(n);
-//  }
-//}
-//
-//sides(3, 6)
-
 function sides(distance, n) {
   for (i = 0; i < n; i++) {
     goForward(100)
@@ -21,4 +12,4 @@ function sides(distance, n) {
   }
 }
 
-sides(3, 6)
+sides(3, 10)
