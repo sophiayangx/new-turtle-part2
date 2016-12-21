@@ -5,11 +5,11 @@ $("body").keydown(function(keydownEvent) {
   } 
 })
 
-function sides(distance, n) {
+function sides(n) {
   for (i = 0; i < n; i++) {
     goForward(100)
     turnLeftStar(n);
   }
 }
 
-sides(3, 10)
+sides(10)
