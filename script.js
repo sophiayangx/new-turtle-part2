@@ -1,15 +1,28 @@
+console.log("fdaff")
+
 $("body").keydown(function(keydownEvent) {
-  if (keydownEvent.keyCode === 13) {
+  if (keydownEvent.keyCode === 39) {
     goForward(100);
-    turnLeft();
   } 
 })
 
-function sides(n) {
-  for (i = 0; i < n; i++) {
+$("body").keydown(function(keydownEvent) {
+  if (keydownEvent.keyCode === 38) {
+    turnUp()
     goForward(100)
-    turnLeftStar(n);
-  }
-}
+  } 
+})
 
-sides(10)
+$("body").keydown(function(keydownEvent) {
+  if (keydownEvent.keyCode === 37) {
+    turnLeft();
+    goForward(100);
+  } 
+})
+
+$("body").keydown(function(keydownEvent) {
+  if (keydownEvent.keyCode === 40) {
+    turnDown();
+    goForward(100);
+  } 
+})
