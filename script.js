@@ -1,5 +1,3 @@
-console.log("fdaff")
-
 $("body").keydown(function(keydownEvent) {
   if (keydownEvent.keyCode === 39) {
     goForward(100);

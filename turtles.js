@@ -19,13 +19,13 @@ function turnDown(n) {
   heading = heading + 90
 }
 
-function turnRightStar(n) {
-  heading = heading - 36
-}
-
-function turnLeftStar(n) {
-  heading = heading + 108
-}
+//function turnRightStar(n) {
+//  heading = heading - 36
+//}
+//
+//function turnLeftStar(n) {
+//  heading = heading + 108
+//}
 
 function goForward(distance) {    
   var radians = -1 * heading * (Math.PI/180);
