@@ -19,13 +19,13 @@ function turnLeft(n) {
 //  heading = heading + 108
 //}
 
-function goBackwards(distance) {
+function goDown(distance) {
   var radians = -1 * heading * (Math.PI/180);
-  var yIncrement = Math.sin(radians) * distance;
-  var xIncrement = -Math.cos(radians) * distance;        
+  var yIncrement = -Math.cos(radians) * distance;
+  var xIncrement = Math.sin(radians) * distance;        
 
   var origPosition = {x: position.x, y: position.y}; 
-  var origHeading = heading + 180;
+  var origHeading = heading + 90;
 
   position.x = position.x + xIncrement;
   position.y = position.y + yIncrement;
