@@ -10,13 +10,12 @@ $("body").keydown(function(keydownEvent) {
   } 
 })
 
-//$("body").keydown(function(keydownEvent) {
-//  if (keydownEvent.keyCode === 37) {
-//    turnLeft();
-//    goForward(100);
-//  } 
-//})
-//
+$("body").keydown(function(keydownEvent) {
+  if (keydownEvent.keyCode === 37) {
+    goBackwards(100);
+  } 
+})
+
 //$("body").keydown(function(keydownEvent) {
 //  if (keydownEvent.keyCode === 40) {
 //    turnDown();
