@@ -6,8 +6,7 @@ $("body").keydown(function(keydownEvent) {
 
 $("body").keydown(function(keydownEvent) {
   if (keydownEvent.keyCode === 38) {
-    turnRight()
-    goForward(100)
+    goUp(100)
   } 
 })
 

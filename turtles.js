@@ -27,7 +27,7 @@ function goUp(distance) {
   var origPosition = {x: position.x, y: position.y}; 
   var origHeading = heading;
 
-  position.x = position.x + xIncrement;
+//  position.x = position.x + xIncrement;
   position.y = position.y + yIncrement;
 
   turtle.animate({
