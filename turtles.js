@@ -1,5 +1,5 @@
 var heading = 0
-var position = {x: 100, y: 200};
+var position = {x: 200, y: 200};
 var turtle = $("#turtle");
 var turtleCage = $(".turtle-cage")
 
@@ -25,7 +25,7 @@ function goBackwards(distance) {
   var xIncrement = -Math.cos(radians) * distance;        
 
   var origPosition = {x: position.x + xIncrement, y: position.y + yIncrement}; 
-  var origHeading = heading + 90;
+  var origHeading = heading + 180;
 
   position.x = position.x + xIncrement;
   position.y = position.y + yIncrement;
