@@ -19,6 +19,28 @@ function turnLeft(n) {
 //  heading = heading + 108
 //}
 
+function goUp(distance) {
+  var radians = -1 * heading * (Math.PI/180);
+  var yIncrement = Math.sin(radians) * distance;
+  var xIncrement = Math.cos(radians) * distance;        
+
+  var origPosition = {x: position.x, y: position.y}; 
+  var origHeading = heading;
+
+  position.x = position.x + xIncrement;
+  position.y = position.y + yIncrement;
+
+  turtle.animate({
+    left: position.x, 
+    bottom: position.y,
+  },{
+    complete : function() {
+      insertLine(origPosition, origHeading, distance)
+    }
+  })
+
+}
+
 function goForward(distance) {    
   var radians = -1 * heading * (Math.PI/180);
   var yIncrement = Math.sin(radians) * distance;
