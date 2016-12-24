@@ -21,8 +21,8 @@ function turnLeft(n) {
 
 function goUp(distance) {
   var radians = -1 * heading * (Math.PI/180);
-  var yIncrement = Math.sin(radians) * distance;
-  var xIncrement = Math.cos(radians) * distance;        
+  var yIncrement = Math.cos(radians) * distance;
+  var xIncrement = Math.sin(radians) * distance;        
 
   var origPosition = {x: position.x, y: position.y}; 
   var origHeading = heading;
