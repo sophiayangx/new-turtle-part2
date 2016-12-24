@@ -24,7 +24,7 @@ function goUp(distance) {
   var yIncrement = Math.cos(radians) * distance;
   var xIncrement = Math.sin(radians) * distance;        
 
-  var origPosition = {x: position.x, y: position.y}; 
+  var origPosition = {x: position.y, y: position.x}; 
   var origHeading = heading + 90;
 
   position.x = position.x + xIncrement;
