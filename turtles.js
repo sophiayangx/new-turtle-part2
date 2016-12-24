@@ -1,5 +1,5 @@
 var heading = 0
-var position = {x: 200, y: 300};
+var position = {x: 90, y: 300};
 var turtle = $("#turtle");
 var turtleCage = $(".turtle-cage")
 
@@ -27,7 +27,7 @@ function goUp(distance) {
   var origPosition = {x: position.x, y: position.y}; 
   var origHeading = heading + 90;
 
-//  position.x = position.x + xIncrement;
+  position.x = position.x + xIncrement;
   position.y = position.y + yIncrement;
 
   turtle.animate({
